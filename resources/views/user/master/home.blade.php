@@ -136,7 +136,7 @@
         if($eventOption == 'desc'){
             $.ajax({
                 type : 'get',
-                url : 'http://127.0.0.1:8000/user/ajax/pizzaList',
+                url : '/user/ajax/pizzaList',
                 data : {'status' : 'desc'},
                 dataType : 'json',
                 success : function(response){
@@ -172,7 +172,7 @@
         }else if($eventOption == 'asc'){
             $.ajax({
                 type : 'get',
-                url : 'http://127.0.0.1:8000/user/ajax/pizzaList',
+                url : '/user/ajax/pizzaList',
                 data : {'status' : 'asc'},
                 dataType : 'json',
                 success : function(response){
